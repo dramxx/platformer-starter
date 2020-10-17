@@ -7,5 +7,6 @@ export default class Game extends Phaser.Scene {
 
   create() {
     this.add.image(400, 300, "background");
+    this.add.image(400, 300, "star");
   }
 }
