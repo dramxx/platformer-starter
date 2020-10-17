@@ -1,7 +1,5 @@
 import Phaser from "phaser";
-
 import { WINDOW } from "./config";
-
 import Preloader from "./scenes/Preloader";
 import Game from "./scenes/Game";
 
@@ -12,7 +10,8 @@ const config: Phaser.Types.Core.GameConfig = {
   physics: {
     default: "arcade",
     arcade: {
-      gravity: { y: 200 },
+      gravity: { y: 300 },
+      debug: true,
     },
   },
   scene: [Preloader, Game],
